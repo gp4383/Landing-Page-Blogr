@@ -27,7 +27,7 @@ html{
     background: url('./images/bg-pattern-intro.svg');
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
     background-color: hsl(356, 100%, 66%);
     border-bottom-left-radius: 8rem;
     font-family: 'Overpass', sans-serif;
@@ -57,7 +57,7 @@ html{
 .links a{
     text-decoration: none;
     margin: 3rem;
-    color: white;
+    color: hsl(240, 2%, 79%);
 }
 .links i{
     margin-left: 0.5rem;
@@ -65,7 +65,7 @@ html{
 .btns{
     margin-right: 6rem;
 }
-.btn__prop{
+.btn__active{
     margin: 3rem;
     border: none;
     outline: none;
@@ -73,11 +73,49 @@ html{
     font-size: 1.3rem;
     font-weight: 600;
     background: none;
-    color: white;
-}
-.btn__prop:hover{
+    color: hsl(240, 2%, 79%);
     border-radius: 2rem;
     background-color:  white;
     color: hsl(356, 100%, 66%);
-    
+}
+.btn__inactive{
+    margin: 3rem;
+    border: 1px solid white;
+    outline: none;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: none;
+    color: white;
+    border-radius: 2rem;
+}
+
+/* Main Content */
+.main-content{
+    text-align: center;
+    margin: 5rem;
+    color: white;
+}
+.main-content h3{
+    font-size: 4.1rem;
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+}
+.main-content p{
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: rgb(214, 208, 208);
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+/* Content Part 1 */
+.cp1 h2{
+    text-align: center;
+    margin: 6rem;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Overpass', sans-serif;
+}
+.content_part{
+    display: flex;
 }
