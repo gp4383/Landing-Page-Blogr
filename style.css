@@ -1,0 +1,83 @@
+.colors{
+    /*  Primary*/
+    color: hsl(356, 100%, 66%);
+    color: hsl(355, 100%, 74%);
+    color: hsl(208, 49%, 24%);
+/* Neutral */
+    color: hsl(240, 2%, 79%);
+    color: hsl(207, 13%, 34%);
+    color: hsl(240, 10%, 16%);
+/*Gradient*/
+    color: hsl(13, 100%, 72%);
+    color: hsl(353, 100%, 62%);
+/* Font*/
+ font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif;    
+}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+.main-container{
+    background: url('./images/bg-pattern-intro.svg');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    background-color: hsl(356, 100%, 66%);
+    border-bottom-left-radius: 8rem;
+    font-family: 'Overpass', sans-serif;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__links{
+    margin-left: 10rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 4rem;
+    text-decoration: none;
+    margin: 2.5rem;
+    color: white;
+}
+.links{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.links a{
+    text-decoration: none;
+    margin: 3rem;
+    color: white;
+}
+.links i{
+    margin-left: 0.5rem;
+}
+.btns{
+    margin-right: 6rem;
+}
+.btn__prop{
+    margin: 3rem;
+    border: none;
+    outline: none;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: none;
+    color: white;
+}
+.btn__prop:hover{
+    border-radius: 2rem;
+    background-color:  white;
+    color: hsl(356, 100%, 66%);
+    
+}
