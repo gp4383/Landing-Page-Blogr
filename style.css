@@ -1,20 +1,3 @@
-.colors{
-    /*  Primary*/
-    color: hsl(356, 100%, 66%);
-    color: hsl(355, 100%, 74%);
-    color: hsl(208, 49%, 24%);
-/* Neutral */
-    color: hsl(240, 2%, 79%);
-    color: hsl(207, 13%, 34%);
-    color: hsl(240, 10%, 16%);
-/*Gradient*/
-    color: hsl(13, 100%, 72%);
-    color: hsl(353, 100%, 62%);
-/* Font*/
- font-family: 'Overpass', sans-serif;
-font-family: 'Ubuntu', sans-serif;    
-}
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;600;700;800;900&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -23,11 +6,14 @@ font-family: 'Ubuntu', sans-serif;
 html{
     font-size: 10px;
 }
+body{
+    background-color: hsl(202, 21%, 93%);
+}
 .main-container{
     background: url('./images/bg-pattern-intro.svg');
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
     background-color: hsl(356, 100%, 66%);
     border-bottom-left-radius: 8rem;
     font-family: 'Overpass', sans-serif;
@@ -51,13 +37,13 @@ html{
 .links{
     display: inline-block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 .links a{
     text-decoration: none;
     margin: 3rem;
-    color: hsl(240, 2%, 79%);
+    color: white;
 }
 .links i{
     margin-left: 0.5rem;
@@ -77,6 +63,10 @@ html{
     border-radius: 2rem;
     background-color:  white;
     color: hsl(356, 100%, 66%);
+    cursor: pointer;
+}
+.btn__active:hover{
+    background-color:  rgb(235, 229, 229);
 }
 .btn__inactive{
     margin: 3rem;
@@ -88,34 +78,177 @@ html{
     background: none;
     color: white;
     border-radius: 2rem;
+    cursor: pointer;
+}
+.btn__inactive:hover{
+    background-color: rgb(235, 229, 229);
+    color: hsl(356, 100%, 66%);
+    border: none;
 }
 
 /* Main Content */
 .main-content{
     text-align: center;
-    margin: 5rem;
+    margin: 20rem;
     color: white;
 }
 .main-content h3{
-    font-size: 4.1rem;
-    font-weight: 400;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
     font-family: 'Overpass', sans-serif;
 }
 .main-content p{
     margin: 2rem;
-    font-size: 1.5rem;
-    color: rgb(214, 208, 208);
+    font-size: 2rem;
+    color: white;
     font-family: 'Ubuntu', sans-serif;  
 }
 
 /* Content Part 1 */
+.cp1{
+    background: url('./images/illustration-editor-desktop.svg') no-repeat;
+    background-position: 800px 0px;
+    background-size: 900px 900px;
+    height: 100vh;
+    width: 100%;
+    padding-left: 5rem;
+}
 .cp1 h2{
     text-align: center;
-    margin: 6rem;
     color: black;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin: 6rem;
+    font-weight: 500;
     font-family: 'Overpass', sans-serif;
 }
-.content_part{
+.cp1 .cp1_left{
+    text-align: left;
+    max-width: 40%;
+    margin-left: 8rem;
+    margin-top: 15rem;
+}
+.cp1_left h4{
+font-size: 2.6rem;
+font-weight: 300;
+font-family: 'Overpass', sans-serif;
+margin: 6rem 0 3rem 0;
+color: hsl(240, 10%, 16%);
+}
+.cp1_left p{
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+    margin-top: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: hsl(207, 13%, 34%);
+}
+/* cp1 ends */
+.cp2{
+    height: 100vh;
+    width: 100%;
     display: flex;
+    align-items: center;
+    position: relative;
+}
+.phone_banner{
+    background-color: red;
+    height:55vh;
+    width: 100%;
+    border-top-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    background: url('./images/bg-pattern-circles.svg') no-repeat;
+    background-color: hsl(240, 10%, 16%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.phone_banner h4{
+    color: white;
+    margin: 4rem 12rem 1rem 0;
+    font-size: 4rem;
+    font-family: 'Overpass', sans-serif;
+}
+.phone_banner p{
+    color: white;
+    margin: 3rem 5.5rem;
+    font-size: 2.1rem;
+    font-weight: 100;
+    font-family: 'Overpass', sans-serif;
+}
+.phone_banner img{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+/* content part 3 */
+.cp3{
+    background: url('./images/illustration-laptop-desktop.svg') no-repeat;
+    background-position: -260px 0px;
+    background-size: 1000px 800px;
+    height: 100vh;
+    width: 100%;
+    /* padding-left: 5rem; */
+}
+.cp3 h2{
+    text-align: right;
+    color: black;
+    font-size: 3.5rem;
+    margin: 6rem;
+    font-weight: 500;
+    font-family: 'Overpass', sans-serif;
+}
+.cp3 .cp3_left{
+    text-align: left;
+    width: 45%;
+    margin-left: 80rem;
+    padding-top: 15rem;
+}
+.cp3_left h4{
+font-size: 2.6rem;
+font-weight: 300;
+font-family: 'Overpass', sans-serif;
+margin: 6rem 0 3rem 0;
+color: hsl(240, 10%, 16%);
+}
+.cp3_left p{
+    font-size: 1.6rem;
+    font-family: 'Overpass', sans-serif;
+    margin-top: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: hsl(207, 13%, 34%);
+}
+/* footer starts here */
+.footer_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 40vh;
+    color: white;
+    list-style: none;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 8rem;
+    font-family: 'Overpass', sans-serif;
+}
+.footer_logo{
+    font-size: 5rem;
+    margin-top: 4rem;
+}
+.footer_container li:first-child{
+    font-size: 2.5rem;
+    margin: 1rem auto;
+    color: white;
+    cursor: default;
+}
+.footer_container li{
+padding: 1rem;
+font-size: 1.8rem;
+color: hsl(240, 2%, 79%);
+cursor: pointer;
+}
+.footer_container li:hover{
+    color: white;
 }
